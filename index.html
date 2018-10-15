@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Simon: Terry Reynolds</title>
+    <!-- Simon: built for the final advanced project with FreeCodeCamp.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Simon game built by Terry Reynolds as a FreeCodeCamp project">
+    <meta name="keywords" content="Simon, game, FreeCodeCamp, Terry Reynolds">
+    <meta name="author" content="Terry Reynolds">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Share+Tech+Mono|VT323" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!--SOUND SOURCES-->
+    <audio id="green_sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="blue_sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="red_sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yellow_sound">
+        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="buzzer_sound">
+        <source src="http://www.threecaster.com/wavy/helmet_b.WAV" type="audio/WAV">
+    </audio>
+    <audio id="bell_sound">
+        <source src="http://www.chersi.it/listing/garamond_podcast06/sound/VIBRABEL.wav" type="audio/WAV">
+    </audio>
+    <audio id="trumpet_fanfare_sound">
+        <source src="http://www.nebo.edu/learning_resources/ppt/sounds/Trumpet_Fanfare.wav" type="audio/WAV">
+    </audio>
+
+    <!--GAME ELEMENTS-->
+    <div class="wrapper" id="wrapper_one">
+        <div class="colorgreen" id="green"></div>
+        <div class="colorred" id="red"></div>
+        <div class="colorblue" id="blue"></div>
+        <div class="coloryellow" id="yellow"></div>
+        <div class="base" id="simon_base"></div>
+        <div class="inner_wrapper">
+            <h1 id="game_title">Simon</h1>
+
+            <div id="counter"></div>
+
+            <p id="counter_text">count</p>
+            <div class="start1" id="start"></div>
+            <p id="start_text">start</p>
+            <div class="strictbutton" id="strict"></div>
+            <p id="strict_text">strict</p>
+
+            <p id="off">Off</p>
+
+            <div id="switch_housing">
+                <p class="on_off_slider" id="on_off_switch"></p>
+            </div>
+
+            <p id="On">On</p>
+        </div>
+
+        <div class="footer_text" id="footer_link" style="color: white">Simon designed and coded by <a href="https://codepen.io/beowulfskin/full/jmEyjv/"
+                target="_blank" style="color: yellow">Terry Reynolds</a>, 2018.</div>
+
+        <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
